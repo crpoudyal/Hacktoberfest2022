@@ -1,3 +1,9 @@
+'''
+
+@author: Ayush Shete
+
+'''
+
 import cv2
 import numpy as np
 from fer import FER
