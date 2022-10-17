@@ -1,3 +1,9 @@
+'''
+
+@author: Ayush Shete
+
+'''
+
 import qrcode
 
 msg = "Hello World"
