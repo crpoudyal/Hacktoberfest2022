@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "grpcdemo";
+option java_outer_classname = "Firstapplication";
+option objc_class_prefix = "HLW";
+
+package grpcdemo;
+
+service FirstapplicationService {
+  rpc send (FirstapplicationRequest) returns (FirstapplicationReply) {}
+}
+
+message FirstapplicationRequest {
+  string firstName = 1;
+  string lastName= 2;
+}
+
+message FirstapplicationReply {
+  string greeting = 1;
+}
