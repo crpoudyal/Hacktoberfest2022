@@ -1,0 +1,87 @@
+import turtle
+#setting the turtle shape
+turtle.shape('turtle')
+#slow turtle drawing
+turtle.speed(2)
+turtle.penup()
+
+
+#draws a stop sign in the bottom of the window, so the user can see if they want the turtle to start somewhere apart from the preset middle of the screen and write above it if required
+turtle.fillcolor('red')
+turtle.goto(114,-260)
+turtle.pendown()
+turtle.pencolor('red')
+turtle.setheading(180)
+turtle.begin_fill()
+turtle.forward(130)
+turtle.left(300)
+turtle.forward(130)
+turtle.left(300)
+turtle.forward(130)
+turtle.left(300)
+turtle.forward(130)
+turtle.left(300)
+turtle.forward(130)
+turtle.left(300)
+turtle.forward(130)
+turtle.end_fill()
+turtle.penup()
+
+
+#letter p
+turtle.penup()
+turtle.goto(108,-115)
+turtle.setheading(0)
+turtle.pendown()
+turtle.pencolor('white')
+turtle.pensize(5)
+turtle.forward(15)
+turtle.circle(-20, 180)
+turtle.forward(15)
+turtle.right(90)
+turtle.forward(40)
+turtle.back(40)
+turtle.left(180)
+turtle.forward(40)
+turtle.penup()
+#letter s
+turtle.goto(-15,-115)
+turtle.pendown()
+turtle.pencolor('white')
+turtle.pensize(5)
+turtle.right(90)
+turtle.forward(12)
+turtle.circle(20,180)
+turtle.circle(-20,180)
+turtle.forward(16)
+turtle.penup()
+
+#letter t
+turtle.goto(0,-115)
+turtle.pendown()
+turtle.pencolor('white')
+turtle.pensize(5)
+turtle.right(180)
+turtle.forward(20)
+turtle.right(90)
+turtle.forward(80)
+turtle.backward(80)
+turtle.left(90)
+turtle.forward(20)
+turtle.penup()
+#letter o
+turtle.forward(10)
+turtle.right(90)
+turtle.forward(23)
+turtle.pendown()
+turtle.forward(9)
+turtle.forward(29)
+turtle.circle(20,180)
+turtle.forward(40)
+turtle.circle(20,180)
+
+turtle.penup()
+
+#hiding the turtle from sight of the user to give a cleaner look to thefinished shapes
+turtle.hideturtle()
+turtle.mainloop()
