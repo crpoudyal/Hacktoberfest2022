@@ -3,10 +3,13 @@ import cv2
 from cvzone.HandTrackingModule import HandDetector
 import cvzone
 import time
+
+
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
 cap.set(4, 720)
 detector = HandDetector(detectionCon=0.8)
+
 
 class MCQ():
     def __init__(self, data):
@@ -43,6 +46,7 @@ print("Total MCQ Objects Created:", len(mcqList))
 
 qNo = 0
 qTotal = len(dataAll)
+
 while True:
     success, img = cap.read()
     img = cv2.flip(img, 1)
@@ -78,5 +82,7 @@ while True:
     cv2.rectangle(img,(30,430),(barValue,460),(0,255,0),cv2.FILLED)
     cv2.rectangle(img, (30, 430), (560, 460), (255, 0, 255),5)
     img, _ = cvzone.putTextRect(img, f'{round((qNo / qTotal) * 100)}%', [580, 455], 2, 2, offset=16)
+    
     cv2.imshow("vid", img)
     cv2.waitKey(1)
+    
