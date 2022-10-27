@@ -62,7 +62,7 @@
 
 ##Importing the OpenCV library
 ##import cv2
-## path to input images are specified and images are loaded with imread command
+## path to input images are specified and images are loaded with the imread command
 ##image1 = cv2.imread('image1.png')
 ##image2 = cv2.imread('image2.png')
 ##
